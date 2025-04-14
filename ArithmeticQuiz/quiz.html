@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <!-- Load the main bootstrap style sheet -->
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+    <title>Arithmetic Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="pt-5">
+        <div class="container d-flex justify-content-center">
+            <div class="col-sm-10">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <fieldset>
+                            <legend>Arithmetic Quiz</legend>
+                            <hr>
+                                <!--Works-->
+                                <div id="main">
+                                <h2><span id="question"></span>=?</h2>
+                                <div class="form-group row ">
+                                    <!--Might need to change to make sure it checks if the question is done -->
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="answerForm" />
+                                    </div>
+                                    <!--Goes from question to question -->
+                                    <div class=" col-sm-3">
+                                        <button class="btn btn-primary" id="answerbtn">Check</button>
+                                    </div>
+                                    </div>
+                            <!--Appears ig-->
+                            <div id="score">
+                                <p>You have <span id="correctNum"></span> out of <span id="totalNum"></span> problems right.</p>
+                            </div>
+                            </div>
+                            <!--Works-->
+                            <div id="done" class="justify-content-center">
+                                <h3>All done!</h3>
+                                <h4>You got <span id="finalCorrect"></span> correct!</h4>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="quiz.js"></script>
+    </body>
+</html>
