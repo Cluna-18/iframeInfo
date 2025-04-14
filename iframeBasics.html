@@ -23,7 +23,9 @@
                                 <p>Iframes are used to embed a web page within a web page.</p>
 
                                 <h4>Syntax</h4>
-                                <p>Here is how an iframe is set up. &lt;iframe src="url" title="description"&gt;&lt;/iframe&gt;</p>
+                                <p>Here is how an iframe is set up. &lt;iframe src="url" title="description"&gt;&lt;/iframe&gt;. One thing to note
+                                    is this title attribute is important for accessibility, as it is used by screenreaders, thus it is best practice to always include it.
+                                </p>
                                 <h4>How it looks on a page</h4>
                             <div class="mb-5">
                                 <div class="container d-flex justify-content-center">
@@ -31,7 +33,7 @@
                                 </div>
                             </div>
                             <h4>Setting Height and Width</h4>
-                            <p>Height and width can be set in the iframe tag. The default is 300px by 150px.</p>
+                            <p>Height and width can be set in the iframe tag, and is a direct feature of HTML. The default is 300px by 150px.</p>
                             <p>Here is an example of how to change the height and width:</p>
                             <p>&lt;iframe src="url" title="description" width="500" height="315"&gt;&lt;/iframe&gt;</p>
                             <p>Here is an example of changing the height and width to better fit the page.</p>
@@ -40,8 +42,12 @@
                                 <iframe width="500" height = "315" src="ArithmeticQuiz/quiz.html" title="W3 Schools iframe" ></iframe>
                             </div>
                             </div>
+                            <p>One thing to note is that while this example of changing the height and with makes use of the 
+                                built in HTML attributes, we can also use CSS to adjust these features, with your typical "style" tag.
+                                CSS can also be used to adjust some other features about iframes as discussed below.
+                            </p>
                             <h4>Adding a border</h4>
-                            <p>We can add a border around the frame and adjust the size, style, and color of the iframe's border. </p>
+                            <p>Using CSS, we can add a border around the frame and adjust the size, style, and color of the iframe's border. </p>
                             <p>Here is an example of what the code may look like:</p>
                             <p>&lt;iframe src="url" title="description" width="800" height="1000" style="border-radius: 5%; border:3px solid red;" &gt;&lt;/iframe&gt;</p>
                             <div class="mb-5">
